@@ -19,6 +19,12 @@ describe('Sum', () => {
 
 describe('makesum', () => {
     it('1', () => { 
-      assert.equal( make(15)(34, 21, 666)(41)(sum),777);
+      assert.equal( make(15)(34, 21, 666)(41)(sum), 777);
+    });
+    it('2', () => { 
+      assert.equal( make(25, 61)(41, 12)(6, 8, 91)(sum), 244);
+    });
+    it('3', () => { 
+      assert.equal( make(74, 1, 24)(58)(78, 19)(sum), 254);
     });
 });
